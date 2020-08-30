@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-type TaskProp = {
+export type TaskProps = {
   task: {
     id: string;
     title: string;
@@ -10,7 +10,7 @@ type TaskProp = {
   onPinTask: () => void;
 };
 
-const Task: FunctionComponent<TaskProp> = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
+const Task: FunctionComponent<TaskProps> = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
   return (
     <div className="list-item">
       <input type="text" value={title} readOnly={true} />
