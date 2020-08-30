@@ -4,10 +4,11 @@ export type TaskProps = {
   task: {
     id: string;
     title: string;
-    state: any;
+    state: string;
+    updatedAt?: Date;
   };
-  onArchiveTask: () => void;
-  onPinTask: () => void;
+  onArchiveTask?: () => void;
+  onPinTask?: () => void;
 };
 
 const Task: FunctionComponent<TaskProps> = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
