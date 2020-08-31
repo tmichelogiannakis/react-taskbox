@@ -857,16 +857,17 @@ a:focus {
   transition: all 200ms ease-in;
   padding-right: 20px;
 }
-.list-item .actions a {
+.list-item .actions button {
   display: inline-block;
   vertical-align: top;
   text-align: center;
   color: #eee;
+  background-color: transparent;
 }
-.list-item .actions a:hover {
+.list-item .actions button:hover {
   color: #2cc5d2;
 }
-.list-item .actions a:active {
+.list-item .actions button:active {
   color: #555;
 }
 .list-item .actions [class^='icon-'] {
