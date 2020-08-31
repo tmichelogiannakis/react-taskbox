@@ -9,7 +9,7 @@ const args = {
 export default {
   component: Task,
   title: 'Task',
-  args,
+  args
 } as Meta;
 
 const Template: Story<TaskProps> = args => <Task {...args} />;
