@@ -1,14 +1,13 @@
 import React, { FunctionComponent } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import TaskList from './TaskList';
 
-type PureInboxScreen = {
+export type InboxScreenProps = {
   error: string | null;
 };
 
-export const PureInboxScreen: FunctionComponent<PureInboxScreen> = ({ error }) => {
+export const PureInboxScreen: FunctionComponent<InboxScreenProps> = ({ error }) => {
   if (error) {
     return (
       <div className="page lists-show">
@@ -37,4 +36,4 @@ PureInboxScreen.defaultProps = {
   error: null
 };
 
-export default connect(({ error }: PureInboxScreen) => ({ error }))(PureInboxScreen);
+export default connect(({ error }: InboxScreenProps) => ({ error }))(PureInboxScreen);
