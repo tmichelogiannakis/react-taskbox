@@ -1,12 +1,8 @@
 import React, { FunctionComponent } from 'react';
+import { TaskModel } from '../models/task.model';
 
 export type TaskProps = {
-  task: {
-    id: string;
-    title: string;
-    state: string;
-    updatedAt?: Date;
-  };
+  task: TaskModel;
   onArchiveTask: (id: string) => void;
   onPinTask: (id: string) => void;
 };
