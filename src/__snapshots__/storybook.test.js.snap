@@ -49,13 +49,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -89,13 +89,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -129,13 +129,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -169,13 +169,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -209,13 +209,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -249,13 +249,13 @@ exports[`Storyshots InboxScreen Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -353,13 +353,13 @@ exports[`Storyshots Task Default 1`] = `
     className="actions"
     onClick={[Function]}
   >
-    <a
+    <button
       onClick={[Function]}
     >
       <span
         className="icon-star"
       />
-    </a>
+    </button>
   </div>
 </div>
 `;
@@ -396,13 +396,13 @@ exports[`Storyshots Task Pinned 1`] = `
     className="actions"
     onClick={[Function]}
   >
-    <a
+    <button
       onClick={[Function]}
     >
       <span
         className="icon-star"
       />
-    </a>
+    </button>
   </div>
 </div>
 `;
@@ -449,13 +449,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -489,13 +489,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -529,13 +529,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -569,13 +569,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -609,13 +609,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -649,13 +649,13 @@ exports[`Storyshots TaskList Default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -883,13 +883,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -923,13 +923,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -963,13 +963,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -1003,13 +1003,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -1043,13 +1043,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -1083,13 +1083,13 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
   </div>
