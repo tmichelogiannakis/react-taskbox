@@ -1,36 +1,40 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
 import TaskList, { TaskListProps } from './TaskList';
-import * as TaskStories from './Task.stories';
+
+const args = {
+  tasks: [
+    { id: '1', title: 'Task 1', state: 'TASK_INBOX' },
+    { id: '2', title: 'Task 2', state: 'TASK_INBOX' },
+    { id: '3', title: 'Task 3', state: 'TASK_INBOX' },
+    { id: '4', title: 'Task 4', state: 'TASK_INBOX' },
+    { id: '5', title: 'Task 5', state: 'TASK_INBOX' },
+    { id: '6', title: 'Task 6', state: 'TASK_INBOX' }
+  ]
+};
 
 export default {
   component: TaskList,
   title: 'TaskList',
-  decorators: [(story: () => FunctionComponent) => <div style={{ padding: '3rem' }}>{story()}</div>]
-};
-
-export const Default = (args: TaskListProps) => {
-  return <TaskList {...args} />;
-};
-Default.args = {
-  // Shaping the stories through args composition.
-  // The data was inherited from the Default story in task.stories.js.
-  tasks: [
-    { ...TaskStories.Default.args.task, id: '1', title: 'Task 1' },
-    { ...TaskStories.Default.args.task, id: '2', title: 'Task 2' },
-    { ...TaskStories.Default.args.task, id: '3', title: 'Task 3' },
-    { ...TaskStories.Default.args.task, id: '4', title: 'Task 4' },
-    { ...TaskStories.Default.args.task, id: '5', title: 'Task 5' },
-    { ...TaskStories.Default.args.task, id: '6', title: 'Task 6' }
+  args,
+  decorators: [
+    (Story: Story) => (
+      <div style={{ padding: '3rem' }}>
+        <Story />
+      </div>
+    )
   ]
-};
+} as Meta;
+
+const Template: Story<TaskListProps> = args => <TaskList {...args} />;
+
+export const Default = Template.bind({});
 
 export const WithPinnedTasks = (args: TaskListProps) => {
   return <TaskList {...args} />;
 };
 WithPinnedTasks.args = {
-  // Shaping the stories through args composition.
-  // Inherited data coming from the Default story.
-  tasks: [...Default.args.tasks.slice(0, 5), { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' }]
+  tasks: [...args.tasks.slice(0, 5), { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' }]
 };
 
 export const Loading = (args: TaskListProps) => {
@@ -45,8 +49,6 @@ export const Empty = (args: TaskListProps) => {
   return <TaskList {...args} />;
 };
 Empty.args = {
-  // Shaping the stories through args composition.
-  // Inherited data coming from the Loading story.
-  ...Loading.args,
+  tasks: [],
   loading: false
 };
