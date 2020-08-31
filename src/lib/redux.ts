@@ -48,19 +48,17 @@ export function pinTask(id: string): TaskActions {
 
 // The reducer describes how the contents of the store change for each action
 export const reducer = (state = initialState, action: TaskActions) => {
-  const {
-    payload: { id }
-  } = action;
+  const { payload } = action;
   switch (action.type) {
     case ARCHIVE_TASK:
       return {
         ...state,
-        tasks: state.tasks.map((task: TaskModel) => (task.id === id ? { ...task, state: 'TASK_ARCHIVED' } : task))
+        tasks: state.tasks.map((task: TaskModel) => (task.id === payload.id ? { ...task, state: 'TASK_ARCHIVED' } : task))
       };
     case PIN_TASK:
       return {
         ...state,
-        tasks: state.tasks.map((task: TaskModel) => (task.id === id ? { ...task, state: 'TASK_ARCHIVED' } : task))
+        tasks: state.tasks.map((task: TaskModel) => (task.id === payload.id ? { ...task, state: 'TASK_ARCHIVED' } : task))
       };
     default:
       return state;
