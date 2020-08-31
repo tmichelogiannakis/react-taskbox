@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import TaskList, { TaskListProps } from './TaskList';
+import { PureTaskList, TaskListProps } from './TaskList';
 
 const args = {
   tasks: [
@@ -14,31 +14,25 @@ const args = {
 };
 
 export default {
-  component: TaskList,
+  component: PureTaskList,
   title: 'TaskList',
   args,
-  decorators: [
-    (Story: Story) => (
-      <div style={{ padding: '3rem' }}>
-        <Story />
-      </div>
-    )
-  ]
+  decorators: [story => <div style={{ padding: '3rem' }}>{story()}</div>]
 } as Meta;
 
-const Template: Story<TaskListProps> = args => <TaskList {...args} />;
+const Template: Story<TaskListProps> = args => <PureTaskList {...args} />;
 
 export const Default = Template.bind({});
 
 export const WithPinnedTasks = (args: TaskListProps) => {
-  return <TaskList {...args} />;
+  return <PureTaskList {...args} />;
 };
 WithPinnedTasks.args = {
   tasks: [...args.tasks.slice(0, 5), { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' }]
 };
 
 export const Loading = (args: TaskListProps) => {
-  return <TaskList {...args} />;
+  return <PureTaskList {...args} />;
 };
 Loading.args = {
   tasks: [],
@@ -46,7 +40,7 @@ Loading.args = {
 };
 
 export const Empty = (args: TaskListProps) => {
-  return <TaskList {...args} />;
+  return <PureTaskList {...args} />;
 };
 Empty.args = {
   tasks: [],

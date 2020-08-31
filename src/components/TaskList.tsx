@@ -11,7 +11,7 @@ export type TaskListProps = {
   onPinTask: (id: string) => void;
 };
 
-export const TaskList: FunctionComponent<TaskListProps> = ({ loading, tasks, onArchiveTask, onPinTask }) => {
+export const PureTaskList: FunctionComponent<TaskListProps> = ({ loading, tasks, onArchiveTask, onPinTask }) => {
   const events = {
     onPinTask,
     onArchiveTask
@@ -58,7 +58,7 @@ export const TaskList: FunctionComponent<TaskListProps> = ({ loading, tasks, onA
   );
 };
 
-TaskList.defaultProps = {
+PureTaskList.defaultProps = {
   loading: false
 };
 
@@ -70,5 +70,5 @@ export default connect(
     onArchiveTask: (id: string) => dispatch(archiveTask(id)),
     onPinTask: (id: string) => dispatch(pinTask(id))
   })
-)(TaskList);
+)(PureTaskList);
 
