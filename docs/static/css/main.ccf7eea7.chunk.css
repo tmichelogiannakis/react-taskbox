@@ -418,9 +418,9 @@ input:-webkit-autofill {
 }
 @font-face {
   font-family: 'percolate';
-  src: url('/icon/percolate.eot?-5w3um4');
-  src: url('/icon/percolate.eot?#iefix5w3um4') format('embedded-opentype'), url('/icon/percolate.woff?5w3um4') format('woff'),
-    url('/icon/percolate.ttf?5w3um4') format('truetype'), url('/icon/percolate.svg?5w3um4') format('svg');
+  src: url(../../static/media/percolate.c68107af.eot);
+  src: url(../../static/media/percolate.c68107af.eot?#iefix5w3um4) format('embedded-opentype'), url(../../static/media/percolate.8cc20c15.woff) format('woff'),
+    url(../../static/media/percolate.62d6a05c.ttf) format('truetype'), url(../../static/media/percolate.5bf8db12.svg) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1026,4 +1026,4 @@ a:focus {
 }
 
 
-/*# sourceMappingURL=main.fbdfeca7.chunk.css.map*/
+/*# sourceMappingURL=main.ccf7eea7.chunk.css.map*/
