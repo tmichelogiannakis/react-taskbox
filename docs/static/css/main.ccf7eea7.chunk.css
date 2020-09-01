@@ -420,7 +420,7 @@ input:-webkit-autofill {
   font-family: 'percolate';
   src: url(../../static/media/percolate.c68107af.eot);
   src: url(../../static/media/percolate.c68107af.eot?#iefix5w3um4) format('embedded-opentype'), url(../../static/media/percolate.8cc20c15.woff) format('woff'),
-    url(../../static/media/percolate.62d6a05c.ttf) format('truetype'), url(../../static/media/percolate.d1d0b39a.svg) format('svg');
+    url(../../static/media/percolate.62d6a05c.ttf) format('truetype'), url(../../static/media/percolate.5bf8db12.svg) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1026,4 +1026,4 @@ a:focus {
 }
 
 
-/*# sourceMappingURL=main.2b2f62b8.chunk.css.map*/
+/*# sourceMappingURL=main.ccf7eea7.chunk.css.map*/
